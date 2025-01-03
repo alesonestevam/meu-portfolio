@@ -8,7 +8,7 @@ interface IVideoContent {
   subtitle: string;
   text: string;
   image: string;
-  url?: string;
+  url: string;
 }
 
 interface VideosContentComponentProps {
@@ -21,6 +21,11 @@ export default function VideosContentComponent(
     cardTitle,
     videoContent
   }: Readonly<VideosContentComponentProps>) {
+
+  async function openVideoUrl(videoUrl: string) {
+    window.open(videoUrl, '_blank');
+  }
+
   return (
     <>
       <div className="w-full bg-lime-700 h-[38px] p-[8px] flex justify-center">
@@ -39,6 +44,7 @@ export default function VideosContentComponent(
                   alt={video.title}
                   layout="fill"
                   objectFit="cover"
+                  onClick={() => openVideoUrl(video.url)}
                 />
               </div>
               <h2 className="text-[20px] text-white font-bold">{video.title}</h2>
