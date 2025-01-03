@@ -61,7 +61,7 @@ export default function CardPortifolioComponent(
         <a href="#aaa12321312" className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
           Saiba mais
           <Image
-            src="/images/arrow_outward-2.svg"
+            src={`images/arrow_outward-2.svg`}
             width={24}
             height={24}
             alt="Seta para cima"

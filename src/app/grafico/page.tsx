@@ -10,42 +10,42 @@ export default function GraficoPage() {
       type: 'GRÁFICO/UI',
       title: 'RIO SÃO FRANCISCO:  VELHO CHICO',
       text: '"Velho Chico: Nosso Sonho Realizado" representa a maior obra de infraestrutura hídrica do Brasil. A identidade visual, assim como a página online criada para essa iniciativa governamental, refletem a magnitude dessa iniciativa, buscando transmitir a vitalidade e a fluidez.',
-      image: '/images/portifolio/VELHO-CHICO-2-1.svg'
+      image: 'images/portifolio/VELHO-CHICO-2-1.svg'
     },
     {
       id: '//02',
       type: 'GRÁFICO',
       title: 'EXPOSIÇÃO LIGYA CLARK: UMA EXPERIÊNCIA VIVA',
       text: 'A identidade visual da exposição de Lygia Clark no Centro Cultural TCU combina minimalismo e impacto visual, traduzindo a essência de sua obra. A paleta de cores com a tipografia principal, confere elegância, personalidade, e quebra de expectativa, enquanto elementos geométricos estruturam a composição, remetendo à linguagem artística de Lygia e ao diálogo entre forma e significado presente em sua trajetória.',
-      image: '/images/portifolio/lygia-clark.svg'
+      image: 'images/portifolio/lygia-clark.svg'
     },
     {
       id: '//03',
       type: 'GRÁFICO',
       title: 'COMUNICAÇÃO DIGITAL MIDR',
       text: 'Design das redes sociais do Ministério da Integração e Desenvolvimento Regional, desenvolvendo conteúdos para Instagram, Twitter e Facebook. O trabalho em questão segue a identidade oficial do governo atuante, garantindo coesão visual e institucionalidade. Essa é a comunicação direta com a população para informar, engajar e aproximar a política das pessoas, reforçando a transparência e a acessibilidade das políticas públicas.',
-      image: '/images/portifolio/midr-comunicacao.svg'
+      image: 'images/portifolio/midr-comunicacao.svg'
     },
     {
       id: '//04',
       type: 'GRÁFICO',
       title: 'LIVRO: A MULHER EM MIM',
       text: 'A cantora norte americana Britney Spears lançou seu livro de memórias intitulado "The Woman In Me”. O presente projeto repensa o visual do livro em uma nova roupagem para as vendas em território brasileiro.',
-      image: '/images/portifolio/livro-mulher-em-min.svg'
+      image: 'images/portifolio/livro-mulher-em-min.svg'
     },
     {
       id: '//05',
       type: 'GRÁFICO',
       title: 'GRUPO SOZO',
       text: 'Criação de uma marca mãe chama "Sozo” para a empresa VLG Investimentos. A identidade foi pensada para transmitir transparência e elegância, se tratando de uma empresa de altos investimentos. Um guia de comportamento visual da marca tanto internamente como para o público externo.',
-      image: '/images/portifolio/grupo-sozo.svg'
+      image: 'images/portifolio/grupo-sozo.svg'
     },
     {
       id: '//06',
       type: 'GRÁFICO',
       title: 'MemoUnB',
       text: 'A criação da identidade visual do MemoUnB é uma homenagem ao legado inconfundível de Oscar Niemeyer, celebrando suas formas curvas e elegantes, que se destacam nas pinturas do edifício SG 10 e nas obras icônicas que marcam a história arquitetônica brasileira.',
-      image: '/images/portifolio/memo-unb.svg'
+      image: 'images/portifolio/memo-unb.svg'
     }
   ]
 

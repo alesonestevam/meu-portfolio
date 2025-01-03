@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col px-20 mt-[88px] mb-4 items-center justify-center">
       <div>
         <Image
-          src={"/images/logotipo_guava_pink.svg"}
+          src={"images/logotipo_guava_pink.svg"}
           width={630}
           height={152}
           alt="Foto perfil"
