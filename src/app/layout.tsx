@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`antialiased ${exo.className}`}
+        className={`antialiased ${exo.className} bg-[#262626]`}
       >
         <div className="flex flex-col min-h-screen xxl:px-40">
           <Header />
