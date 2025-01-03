@@ -37,14 +37,14 @@ const Footer = () => {
           <div className="flex justify-between">
             <div className="text-[14px] md:text-3xl font-bold mb-4">VOCÊ PODE <br /> ME ENCONTRAR <br /> NAS SEGUINTES REDES</div>
             <div className="flex flex-col gap-1 md:gap-4 mr-12">
-              <a href="mailto:alesondf@gmail.com" className="text-[14px] md:text-[20px] text-yellow-400 underline">
+              <a href="mailto:alesondf@gmail.com" className="text-[14px] md:text-[20px] text-lime-200 underline">
                 EMAIL
               </a>
               <a
                 href="https://www.linkedin.com/in/aleson-estevam/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[14px] md:text-[20px] text-yellow-400 underline"
+                className="text-[14px] md:text-[20px] text-lime-200 underline"
               >
                 LINKEDIN
               </a>
@@ -52,7 +52,7 @@ const Footer = () => {
                 href="https://bsky.app/profile/designerestevam.bsky.social"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[14px] md:text-[20px] text-yellow-400 underline"
+                className="text-[14px] md:text-[20px] text-lime-200 underline"
               >
                 BLUESKY
               </a>

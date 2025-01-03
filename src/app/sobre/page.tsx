@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="px-10 lg:px-36 mt-4 mb-4 grid grid-cols-1 lg:grid-cols-3 gap-6 mt-[40px]">
-      <div className="flex flex-col lg:col-span-2 lg:pr-[140px]">
+      <div className="flex flex-col lg:col-span-2 lg:pr-[84px]">
         <p className="text-[16px] md:text-[38px] font-bold mb-4 text-lime-200 text-center md:text-start">
           OLÁ! SOU O ALESON ESTEVAM, <br />
           DESIGNER GRÁFICO E DE INTERFACES <br />
