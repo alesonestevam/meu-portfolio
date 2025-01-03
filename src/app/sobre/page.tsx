@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <div className="hidden md:flex items-center md:justify-center">
         <Image
-          src={"/images/foto-de-sobre-1.svg"}
+          src={"./images/foto-de-sobre-1.svg"}
           width={485}
           height={361}
           alt="Foto perfil"
@@ -38,7 +38,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center md:hidden items-center md:justify-center ">
         <Image
-          src={"/images/foto-de-sobre-1.svg"}
+          src={"./images/foto-de-sobre-1.svg"}
           width={181}
           height={361}
           alt="Foto perfil"

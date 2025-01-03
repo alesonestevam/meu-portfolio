@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="text-[14px] md:text-3xl font-bold mb-4">ENTRE EM CONTATO</div>
             <div className="flex md:hidden mb-4">
               <Image
-                src={"/images/arrow_outward.svg"}
+                src={"./images/arrow_outward.svg"}
                 width={24}
                 height={24}
                 alt="Ícone seta para cima"
@@ -22,7 +22,7 @@ const Footer = () => {
             </div>
             <div className="hidden md:flex mb-4">
               <Image
-                src={"/images/arrow_outward.svg"}
+                src={"./images/arrow_outward.svg"}
                 width={48}
                 height={48}
                 alt="Ícone seta para cima"
