@@ -78,7 +78,7 @@ export default function VideosPage() {
     <div className="px-10 lg:px-20 mt-[40px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-          <p className="text-[24px] text-justify">A edição de vídeos, deve priorizar a acessibilidade com legendas e/ou leitura em Libras, além de trabalhar colorização temática e cortes dinâmicos para engajar o público. Utilizo Adobe Premiere e After Effects como ferramentas.</p>
+          <p className="text-[24px] text-justify">A <b className="text-lime-200">edição de vídeos</b>, deve priorizar a acessibilidade com legendas e/ou leitura em Libras, além de trabalhar colorização temática e cortes dinâmicos para engajar o público. Utilizo Adobe Premiere e After Effects como ferramentas.</p>
           <hr className="mt-4"></hr>
         </div>
       </div>
