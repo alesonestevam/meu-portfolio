@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface PortifolioObject {
   id: string;
@@ -8,6 +9,7 @@ interface PortifolioObject {
   title: string;
   text: string;
   image: string;
+  route: string;
 }
 
 interface CardPortifolioComponentProps {
@@ -18,6 +20,8 @@ export default function CardPortifolioComponent(
   {
     portifolioObject
   }: Readonly<CardPortifolioComponentProps>) {
+  const router = useRouter();
+
   return (
     <div className="flex flex-col mdd:flex-row justify-between text-white pt-6 pb-6 pl-0 pr-6 md:pt-12 md:pb-12 md:pr-12 md:pl-0">
       <div className="flex flex-col items-start space-y-2 w-[110px] md:w-[36px]">
@@ -47,7 +51,8 @@ export default function CardPortifolioComponent(
           alt={portifolioObject.title}
           title={portifolioObject.title}
           priority
-           className="rounded-lg w-full max-w-xs md:max-w-md"
+          className="rounded-lg w-full max-w-xs md:max-w-md"
+          onClick={() => router.push(`${portifolioObject.route}`)}
         />
       </div>
 
@@ -58,7 +63,7 @@ export default function CardPortifolioComponent(
         <p className="text-[14px] text-white">
           {portifolioObject.text}
         </p>
-        <a href="#aaa12321312" className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
+        <a href={`/${portifolioObject.route}`} className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
           Saiba mais
           <Image
             src={`images/arrow_outward-2.svg`}
