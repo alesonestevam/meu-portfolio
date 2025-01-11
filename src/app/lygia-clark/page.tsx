@@ -43,7 +43,7 @@ export default function LygiaCarkPage() {
             <p>3 camadas que estão presentes nas obras da artista: </p>
             <p><b className="font-bold text-lime-200">geometria, elegância e quebra de expectativa.</b></p>
             <br/>
-            <p>A inspiração nas formas da série "Bichos” foi de grande</p>
+            <p>A inspiração nas formas da série &quot;Bichos&quot; foi de grande</p>
             <p>relevância aqui. Pensamento simples mas que se</p>
             <p>modifique a cada visão ou demanda.</p>
           </div>
