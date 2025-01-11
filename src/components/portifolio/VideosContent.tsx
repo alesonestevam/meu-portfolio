@@ -38,7 +38,7 @@ export default function VideosContentComponent(
               key={video.id}
               className="rounded-lg p-4 flex flex-col items-start"
             >
-              <div className="relative w-full h-[272px] rounded-lg overflow-hidden mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 ">
+              <div onClick={() => openVideoUrl(video.url)} className="relative w-full h-[272px] rounded-lg overflow-hidden mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 ">
                 <Image
                   src={video.image}
                   alt={video.title}
@@ -55,6 +55,7 @@ export default function VideosContentComponent(
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-16 h-16"
+                    onClick={() => openVideoUrl(video.url)}
                   >
                     <path
                       d="M17.6 27.8L26.94 20.8C27.48 20.4 27.48 19.6 26.94 19.2L17.6 12.2C16.94 11.7 16 12.18 16 13V27C16 27.82 16.94 28.3 17.6 27.8ZM20 0C8.96 0 0 8.96 0 20C0 31.04 8.96 40 20 40C31.04 40 40 31.04 40 20C40 8.96 31.04 0 20 0ZM20 36C11.18 36 4 28.82 4 20C4 11.18 11.18 4 20 4C28.82 4 36 11.18 36 20C36 28.82 28.82 36 20 36Z"
