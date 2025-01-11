@@ -43,7 +43,7 @@ export default function CardPortifolioComponent(
       </div>
 
       <div className="flex items-start justify-center cursor-pointer my-6 md:my-0 md:mx-12 transition-transform duration-300 hover:scale-105">
-        <Link href={process.env.NEXT_PUBLIC_APP_ENV || process.env.NEXT_PUBLIC_APP_ENV === 'dev' ? `/${portifolioObject.route}` : `meu-portifolio/${portifolioObject.route}` }>
+        <Link href={process.env.NEXT_PUBLIC_APP_ENV || process.env.NEXT_PUBLIC_APP_ENV === 'dev' ? `/${portifolioObject.route}` : `meu-portfolio/${portifolioObject.route}` }>
           <Image
             src={portifolioObject.image}
             width={391}
