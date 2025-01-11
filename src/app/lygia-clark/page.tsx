@@ -29,13 +29,13 @@ export default function LygiaCarkPage() {
             title={"lygia-2"}
           />
           </div>
-          <div className="mt-4 text-center lg:text-start">
+          <div className="mt-4 text-center lg:text-start xxl:text-center">
             <p>Além de peças gráficas para as redes sociais do TCU, foi criado também um padrão para <b className="font-bold text-lime-200">sinalização.</b></p>
             <p>Entrada, saída e descritivos durante a exposição foram dispostos a modo que o público consiga se</p>
             <p>locomover com facilidade e sem se desprender do universo proposto</p>
           </div>
         </div>
-        <div className="flex flex-col col-span-1 mdd:ml-[-20px]">
+        <div className="flex flex-col col-span-1 mdd:ml-[-20px] xxl:ml-[-140px]">
           <div className="mb-4 text-center lg:text-start">
             <p>A exposição foi feita em parceria entre o Centro Cultural</p>
             <p>TCU e Instituto de Ensino Superior de Brasília (IESB). A</p>
@@ -67,43 +67,49 @@ export default function LygiaCarkPage() {
             title={"lygia-4"}
           />
       </div>
-      <div className="flex flex-row items-center justify-center bg-lime-200 mt-[-1px] p-8">
-        <div className="p-8">
+      <div className="flex flex-row items-center justify-center mt-[-1px]">
+        <div className="flex items-center justify-center bg-lime-200 w-[1280px]">
+          <div className="p-8">
+            <Image
+              src={'images/portifolio/lygia-clark/lygia-5.svg'}
+              width={333}
+              height={500}
+              alt={"lygia-5"}
+              title={"lygia-5"}
+            />
+          </div>
+          <div className="p-8">
+            <Image
+              src={'images/portifolio/lygia-clark/lygia-6.svg'}
+              width={375}
+              height={250}
+              alt={"lygia-6"}
+              title={"lygia-6"}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center justify-center mt-[-1px]">
+        <div className="flex items-center justify-center bg-lime-200 w-[1280px]">
           <Image
-            src={'images/portifolio/lygia-clark/lygia-5.svg'}
-            width={333}
+            src={'images/portifolio/lygia-clark/lygia-7.svg'}
+            width={711}
             height={500}
-            alt={"lygia-5"}
-            title={"lygia-5"}
+            alt={"lygia-7"}
+            title={"lygia-7"}
           />
         </div>
-        <div className="p-8">
+      </div>
+      <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center w-[1280px]">
           <Image
-            src={'images/portifolio/lygia-clark/lygia-6.svg'}
-            width={375}
-            height={250}
-            alt={"lygia-6"}
-            title={"lygia-6"}
+            src={'images/portifolio/lygia-clark/lygia-8.svg'}
+            width={1280}
+            height={758}
+            alt={"lygia-8"}
+            title={"lygia-8"}
           />
         </div>
-      </div>
-      <div className="flex items-center justify-center bg-lime-200 mt-[-1px] p-8">
-        <Image
-          src={'images/portifolio/lygia-clark/lygia-7.svg'}
-          width={711}
-          height={500}
-          alt={"lygia-7"}
-          title={"lygia-7"}
-        />
-      </div>
-      <div className="flex items-center">
-        <Image
-          src={'images/portifolio/lygia-clark/lygia-8.svg'}
-          width={1280}
-          height={758}
-          alt={"lygia-8"}
-          title={"lygia-8"}
-        />
       </div>
       <FooterScrollTopTopButton />
       <FooterButtons/>
