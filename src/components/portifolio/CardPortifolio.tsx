@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface PortifolioObject {
@@ -44,16 +45,17 @@ export default function CardPortifolioComponent(
       </div>
 
       <div className="flex items-start justify-center cursor-pointer my-6 md:my-0 md:mx-12 transition-transform duration-300 hover:scale-105">
-        <Image
-          src={portifolioObject.image}
-          width={391}
-          height={256}
-          alt={portifolioObject.title}
-          title={portifolioObject.title}
-          priority
-          className="rounded-lg w-full max-w-xs md:max-w-md"
-          onClick={() => router.push(`${portifolioObject.route}`)}
-        />
+        <Link href={`/${portifolioObject.route}`}>
+          <Image
+            src={portifolioObject.image}
+            width={391}
+            height={256}
+            alt={portifolioObject.title}
+            title={portifolioObject.title}
+            priority
+            className="rounded-lg w-full max-w-xs md:max-w-md"
+          />
+        </Link>
       </div>
 
       <div className="flex flex-col space-y-4 mdd:max-w-lg justify-center md:mt-4">
