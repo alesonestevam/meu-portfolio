@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface PortifolioObject {
@@ -64,7 +65,7 @@ export default function CardPortifolioComponent(
         <p className="text-[14px] text-white">
           {portifolioObject.text}
         </p>
-        <a href={process.env.NEXT_PUBLIC_APP_ENV || process.env.NEXT_PUBLIC_APP_ENV === 'dev' ? `/${portifolioObject.route}` : `meu-portfolio/${portifolioObject.route}` } className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
+        <Link href={`/${portifolioObject.route}`} className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
           Saiba mais
           <Image
             src={`images/arrow_outward-2.svg`}
@@ -75,7 +76,7 @@ export default function CardPortifolioComponent(
             priority
             className="text-lg font-bold text-white ml-2"
           />
-        </a>
+        </Link>
       </div>
     </div>
   )
