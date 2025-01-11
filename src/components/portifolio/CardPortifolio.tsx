@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 interface PortifolioObject {
   id: string;
@@ -21,7 +20,6 @@ export default function CardPortifolioComponent(
   {
     portifolioObject
   }: Readonly<CardPortifolioComponentProps>) {
-  const router = useRouter();
 
   return (
     <div className="flex flex-col mdd:flex-row justify-between text-white pt-6 pb-6 pl-0 pr-6 md:pt-12 md:pb-12 md:pr-12 md:pl-0">
