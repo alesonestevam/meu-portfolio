@@ -2,6 +2,7 @@
 
 import CardPortifolioComponent from "@/components/portifolio/CardPortifolio";
 import { FooterButtons } from "@/components/ui/FooterButtons";
+import { FooterScrollTopTopButton } from "@/components/ui/FooterScrollToTopButton";
 
 export default function UxUiDesignPage() {
   const UxUiPortifolio = [
@@ -62,6 +63,7 @@ export default function UxUiDesignPage() {
           })
         }
       </div>
+      <FooterScrollTopTopButton />
       <FooterButtons />
     </div>
   )

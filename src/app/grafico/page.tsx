@@ -2,8 +2,13 @@
 
 import CardPortifolioComponent from "@/components/portifolio/CardPortifolio";
 import { FooterButtons } from "@/components/ui/FooterButtons";
+import { FooterScrollTopTopButton } from "@/components/ui/FooterScrollToTopButton";
+import { useState } from "react";
 
 export default function GraficoPage() {
+  const itemsPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(1);
+
   const graficoPortifolio = [
     {
       id: '//01',
@@ -53,7 +58,17 @@ export default function GraficoPage() {
       image: 'images/portifolio/memo-unb.svg',
       route: "memo-unb"
     }
-  ]
+  ];
+
+  const totalPages = Math.ceil(graficoPortifolio.length / itemsPerPage);
+  const currentItems = graficoPortifolio.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <div className="px-10 lg:px-20 mt-[40px]">
@@ -64,20 +79,32 @@ export default function GraficoPage() {
         </div>
       </div>
       <div className="mt-12 mb-12">
-        {
-          graficoPortifolio.map((portifolio, index) => {
-            return (
-              <div key={portifolio.id}>
-                <CardPortifolioComponent portifolioObject={portifolio} />
-                {
-                  index < graficoPortifolio.length -1 &&
-                  <hr></hr>
-                }
-              </div>
-            )
-          })
-        }
+        {currentItems.map((portifolio, index) => (
+          <div key={portifolio.id}>
+            <CardPortifolioComponent portifolioObject={portifolio} />
+            {index < currentItems.length - 1 && <hr />}
+          </div>
+        ))}
+        <div className="flex justify-center mt-4 space-x-2">
+        {[...Array(totalPages)].map((_, index) => {
+          const pageNumber = index + 1;
+          return (
+            <button
+              key={pageNumber}
+              onClick={() => handlePageChange(pageNumber)}
+              className={`px-3 py-2 ${
+                currentPage === pageNumber
+                  ? 'text-guava-400'
+                  : 'text-white'
+              }`}
+            >
+              {pageNumber}
+            </button>
+          );
+        })}
       </div>
+      </div>
+      <FooterScrollTopTopButton />
       <FooterButtons />
     </div>
   )
