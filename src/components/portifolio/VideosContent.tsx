@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRef, createRef } from 'react';
 
 interface IVideoContent {
   id: number;
@@ -26,6 +27,15 @@ export default function VideosContentComponent(
     window.open(videoUrl, '_blank');
   }
 
+  const imageRefs = useRef(videoContent.map(() => createRef<HTMLImageElement>()));
+
+  const handleWithMouseEnter = (index: number, action: string) => {
+    const currentImageRef = imageRefs.current[index];
+    if (currentImageRef?.current) {
+      currentImageRef.current.style.opacity = action === 'enter' ? '0.3' : '1';
+    }
+  };
+
   return (
     <>
       <div className="w-full bg-lime-700 h-[38px] p-[8px] flex justify-center">
@@ -33,21 +43,25 @@ export default function VideosContentComponent(
       </div>
       <div className="text-white p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {videoContent.map((video) => (
+          {videoContent.map((video, index) => (
             <div
               key={video.id}
               className="rounded-lg p-4 flex flex-col items-start"
             >
               <div onClick={() => openVideoUrl(video.url)} className="relative w-full h-[272px] rounded-lg overflow-hidden mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 ">
                 <Image
+                  ref={imageRefs.current[index]}
                   src={video.image}
                   alt={video.title}
                   layout="fill"
-                  objectFit="cover"
                   onClick={() => openVideoUrl(video.url)}
                   className="hover:opacity-30 transition-opacity duration-300"
                 />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div
+                  className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  onMouseEnter={() => handleWithMouseEnter(index, 'enter')}
+                  onMouseLeave={() => handleWithMouseEnter(index, 'leave')}
+                >
                   <svg
                     width="40"
                     height="40"
