@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRef, createRef } from 'react';
 
 interface IVideoContent {
@@ -41,12 +42,12 @@ export default function VideosContentComponent(
       <div className="w-full bg-lime-700 h-[38px] p-[8px] flex justify-center">
         <p className="text-[18px] font-bold">{cardTitle}</p>
       </div>
-      <div className="text-white p-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="text-white md:p-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
           {videoContent.map((video, index) => (
             <div
               key={video.id}
-              className="rounded-lg p-4 flex flex-col items-start"
+              className="rounded-lg p-4 flex flex-col items-center md:items-start"
             >
               <div onClick={() => openVideoUrl(video.url)} className="relative w-full h-[272px] rounded-lg overflow-hidden mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 ">
                 <Image
@@ -79,11 +80,27 @@ export default function VideosContentComponent(
                 </div>
               </div>
 
-              <h2 className="text-[20px] text-white font-bold">{video.title}</h2>
-              <p className="text-[12px] text-white">{video.subtitle}</p>
-              <hr className="w-[200px] mt-2 mb-2 border-lime-200"></hr>
-              <div className="max-w-[321px]">
-                <p className="text-[14px] text-white">{video.text}</p>
+              <div className="xll:ml-14">
+                <h2 className="text-[20px] text-white font-bold">{video.title}</h2>
+                <p className="text-[12px] text-white text-center md:text-start">{video.subtitle}</p>
+                <hr className="w-[200px] mt-2 mb-2 border-lime-200"></hr>
+                <div className="max-w-[321px] text-center md:text-start">
+                  <p className="text-[14px] text-white">{video.text}</p>
+                </div>
+              </div>
+              <div className="md:hidden mt-[18px]">
+                <Link href={video.url} target="_blank" className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-center md:justify-end">
+                  Assistir
+                  <Image
+                    src={`images/arrow_outward-2.svg`}
+                    width={24}
+                    height={24}
+                    alt="Seta para cima"
+                    title="Seta para cima"
+                    priority
+                    className="text-lg font-bold text-white ml-2"
+                  />
+                </Link>
               </div>
             </div>
           ))}

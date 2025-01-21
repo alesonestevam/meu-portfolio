@@ -26,7 +26,7 @@ export default function CardPortifolioComponent(
 
   return (
     <div className="flex flex-col mdd:flex-row justify-between text-white pt-6 pb-6 pl-0 pr-6 md:pt-12 md:pb-12 md:pr-12 md:pl-0">
-      <div className="flex flex-col items-start space-y-2 w-[110px] md:w-[36px]">
+      <div className="flex flex-col items-center md:items-start space-y-2 w-full md:w-[36px]">
         <span className="text-[20px] text-white mb-4">{portifolioObject.id}</span>
           {
             portifolioObject.type === 'GRÁFICO/UI' ?
@@ -59,13 +59,13 @@ export default function CardPortifolioComponent(
       </div>
 
       <div className="flex flex-col space-y-4 mdd:max-w-lg justify-center md:mt-4">
-        <h3 className="text-[20px] font-semibold uppercase">
+        <h3 className="text-[16px] md:text-[20px] font-semibold uppercase text-center md:text-start">
           {portifolioObject.title}
         </h3>
-        <p className="text-[14px] text-white">
+        <p className="text-[14px] text-white text-center md:text-start">
           {portifolioObject.text}
         </p>
-        <Link href={`/${portifolioObject.route}`} className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-end">
+        <Link href={`/${portifolioObject.route}`} className="flex items-center text-sm font-semibold text-white underline hover:text-gray-400 justify-center md:justify-end">
           Saiba mais
           <Image
             src={`images/arrow_outward-2.svg`}

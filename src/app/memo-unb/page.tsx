@@ -18,7 +18,7 @@ export default function MemoUnbPage() {
           title={"memounb-1"}
         />
       </div>
-      <div className="mb-[24px] flex items-center justify-center">
+      <div className="hidden md:flex mb-[24px] items-center justify-center">
         <div className="w-[1280px] bg-lime-200 p-8 text-center text-gray-950">
           <p>A criação da identidade visual do MemoUnB é uma homenagem ao legado inconfundível de Oscar Niemeyer, </p>
           <p>celebrando suas formas curvas e elegantes, que se destacam nas pinturas do edifício SG 10 e nas obras icônicas que </p>
@@ -28,7 +28,17 @@ export default function MemoUnbPage() {
           <p>universidade de combinar tradição com inovação em suas soluções arquitetônicas. </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-[24px] mb-[24px] ml-[184px] mr-[184px]">
+      <div className="flex md:hidden mb-[24px] items-center justify-center">
+        <div className="w-[1280px] bg-lime-200 p-4 text-center text-gray-950">
+          <p>A criação da identidade visual do MemoUnB é uma homenagem ao legado inconfundível de Oscar Niemeyer,
+          celebrando suas formas curvas e elegantes, que se destacam nas pinturas do edifício SG 10 e nas obras icônicas que
+          marcam a história arquitetônica brasileira. Além de se inspirar na estética de Niemeyer, o projeto também dialoga com
+          a abordagem ousada de João Filgueiras Lima (Lelé), responsável pela experimentação construtiva no uso de módulos
+          pré-fabricados de concreto. Essa técnica aplicada ao edifício SG 10 e outros prédios da UnB representa a capacidade da
+          universidade de combinar tradição com inovação em suas soluções arquitetônicas. </p>
+        </div>
+      </div>
+      <div className="hidden md:grid grid-cols-1 sm:grid-cols-3 gap-4 mt-[24px] mb-[24px] ml-[184px] mr-[184px]">
         <div className="flex items-center justify-center col-span-2">
           <div>
             <p>
@@ -48,6 +58,28 @@ export default function MemoUnbPage() {
             alt={"memounb-2"}
             title={"memounb-2"}
           />
+        </div>
+      </div>
+      <div className="flex md:hidden mt-[24px] mb-[24px] flex-col justify-center">
+        <div>
+          <Image
+            src={'images/portifolio/memo-unb/memounb-2.svg'}
+            width={364}
+            height={419}
+            alt={"memounb-2"}
+            title={"memounb-2"}
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <div>
+            <p>
+              A marca captura a essência do espaço de memória, integrando-se à identidade visual da UnB por meio de suas cores e tipografia, enquanto reflete a diversidade das áreas de conhecimento da instituição. O sistema é flexível, permitindo adaptações que abrangem ciências humanas, sociais, exatas, biológicas e artes.
+            </p>
+            <br />
+            <p>
+              Dessa forma, a identidade visual do MemoUnB celebra o patrimônio arquitetônico e cultural, fortalecendo o vínculo da universidade com o desenvolvimento multidisciplinar do conhecimento e da cultura.
+            </p>
+          </div>
         </div>
       </div>
       <div className="text-center mb-[24px]">
@@ -93,9 +125,9 @@ export default function MemoUnbPage() {
           title={"memounb-6"}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-[24px] mb-[24px] p-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-[24px] mb-[24px] p-0 md:p-12">
         <div className="flex items-center justify-center col-span-1">
-          <div className="p-4 ml-[-20px]">
+          <div className="p-0 md:p-4 md:ml-[-20px]">
             <p>
               No caso da identidade visual do MemoUnB, os grafismos serão inspirados
               nas formas arquitetônicas do <b className="text-lime-200">edifício SG 10</b> e nas curvas de Niemeyer, criando padrões

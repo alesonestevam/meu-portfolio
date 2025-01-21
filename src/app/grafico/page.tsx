@@ -74,7 +74,7 @@ export default function GraficoPage() {
     <div className="px-10 lg:px-20 mt-[40px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-          <p className="text-[24px] text-justify">Meu trabalho em <b className="text-lime-200">Design Gráfico</b> é focado em transmitir informações de forma clara, respeitando a linha comunicacional de cada cliente e focando a  atenção pela harmonia na aplicação, sendo que cada projeto é pensado para atender às necessidades específicas de cada cliente e seu público-alvo. Ferramentas como Photoshop, Illustrator e InDesign auxiliam na criação técnica e estética.</p>
+          <p className="text-[12px] md:text-[24px] text-justify">Meu trabalho em <b className="text-lime-200">Design Gráfico</b> é focado em transmitir informações de forma clara, respeitando a linha comunicacional de cada cliente e focando a  atenção pela harmonia na aplicação, sendo que cada projeto é pensado para atender às necessidades específicas de cada cliente e seu público-alvo. Ferramentas como Photoshop, Illustrator e InDesign auxiliam na criação técnica e estética.</p>
           <hr className="mt-4"></hr>
         </div>
       </div>

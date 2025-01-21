@@ -56,6 +56,7 @@ export default {
       mdd: "1024px",
       lg: "1025px",
       xl: "1280px",
+      xll: "1900",
       xxl: "2560px"
     },
   },

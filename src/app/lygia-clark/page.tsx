@@ -9,7 +9,7 @@ export default function LygiaCarkPage() {
   return (
     <div className="px-10 lg:px-20 mt-[40px]">
       <WorksTitleComponent title="Lygia Clark: Uma Experiência Viva" />
-      <div className="flex justify-center mt-[91px] mb-[88px]">
+      <div className="flex justify-center mt-4 md:mt-[91px] mb-[14px] md:mb-[88px]">
         <Image
             src={'images/portifolio/lygia-clark/lygia-1.svg'}
             width={997}
@@ -19,7 +19,7 @@ export default function LygiaCarkPage() {
           />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
-        <div className="flex flex-col col-span-2">
+        <div className="hidden md:flex flex-col col-span-2">
           <div className="w-full overflow-hidden mdd:flex mdd:justify-center">
             <Image
             src={'images/portifolio/lygia-clark/lygia-2.svg'}
@@ -35,7 +35,22 @@ export default function LygiaCarkPage() {
             <p>locomover com facilidade e sem se desprender do universo proposto</p>
           </div>
         </div>
-        <div className="flex flex-col col-span-1 mdd:ml-[-20px] xxl:ml-[-140px]">
+        <div className="flex md:hidden flex-col col-span-2">
+          <div className="text-center lg:text-start xxl:text-center mb-[18px]">
+            <p>
+            Além de peças gráficas para as redes sociais do TCU, foi criado também um padrão para <b className="font-bold text-lime-200">sinalização.</b> Entrada, saída e descritivos durante a exposição foram dispostos a modo que o público consiga se locomover com facilidade e sem se desprender do universo proposto</p>
+          </div>
+          <div className="w-full overflow-hidden mdd:flex mdd:justify-center">
+            <Image
+            src={'images/portifolio/lygia-clark/lygia-2.svg'}
+            width={747}
+            height={425}
+            alt={"lygia-2"}
+            title={"lygia-2"}
+          />
+          </div>
+        </div>
+        <div className="hidden md:flex flex-col col-span-1 mdd:ml-[-20px] xxl:ml-[-140px]">
           <div className="mb-4 text-center lg:text-start">
             <p>A exposição foi feita em parceria entre o Centro Cultural</p>
             <p>TCU e Instituto de Ensino Superior de Brasília (IESB). A</p>
@@ -55,6 +70,24 @@ export default function LygiaCarkPage() {
               alt={"lygia-3"}
               title={"lygia-3"}
             />
+          </div>
+        </div>
+        <div className="flex md:hidden flex-col col-span-1 mdd:ml-[-20px] xxl:ml-[-140px]">
+        <div className="w-full overflow-hidden flex justify-center mt-[14px] ml-2">
+            <Image
+              src={'images/portifolio/lygia-clark/lygia-3.svg'}
+              width={257}
+              height={412}
+              alt={"lygia-3"}
+              title={"lygia-3"}
+            />
+          </div>
+          <div className="mb-4 text-center lg:text-start">
+            <p>A exposição foi feita em parceria entre o Centro Cultural TCU e Instituto de Ensino Superior de Brasília (IESB). A ideia da identidade visual proposta leva em consideração 3 camadas que estão presentes nas obras da artista:  <b className="font-bold text-lime-200">geometria, elegância e quebra de expectativa.</b></p>
+            <br/>
+            <p>A inspiração nas formas da série &quot;Bichos&quot; foi de grande
+            relevância aqui. Pensamento simples mas que se
+            modifique a cada visão ou demanda.</p>
           </div>
         </div>
       </div>

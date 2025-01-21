@@ -16,7 +16,7 @@ export default function UxUiDesignPage() {
     },
     {
       id: '//02',
-      type: 'UI',
+      type: 'UX/UI',
       title: 'PROJETO EBAC: PIX NA SUMUP',
       text: 'Se trata de um projeto fictício para a conclusão do curso de Design UI pela EBAC (Escola Britânica de Artes Criativas). O desafio aqui foi criar um método intuitivo para que os clientes mais antigos do banco pudessem aprender e usar o método de pagamento PIX.',
       image: 'images/portifolio/projeto-ebac.svg',
@@ -24,7 +24,7 @@ export default function UxUiDesignPage() {
     },
     {
       id: '//03',
-      type: 'UI',
+      type: 'UX',
       title: 'APLICATIVO COOKTIME',
       text: 'Aplicativo temporizador de cozinha. A ideia é proporcionar tranquilidade através do fluxo de fácil entendimento para o usuário, com isso trazendo mais conforto no controle de tempo em receitas seja no fogão, forno e/ou geladeira.',
       image: 'images/portifolio/cooktime.svg',
@@ -44,7 +44,7 @@ export default function UxUiDesignPage() {
     <div className="px-10 lg:px-20 mt-[40px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
-          <p className="text-[24px] text-justify">Especializado em <b className="text-lime-200">Design de Interfaces</b> através da plataforma Figma, foco em criar experiências ágeis e elegantes que guiam o usuário de forma intuitiva. Trabalho com atenção aos detalhes, desenvolvendo style guides completos que incluem grids, paletas de cores e iconografia, garantindo consistência e usabilidade em cada projeto.</p>
+          <p className="text-[12px] md:text-[24px] text-justify">Especializado em <b className="text-lime-200">Design de Interfaces</b> através da plataforma Figma, foco em criar experiências ágeis e elegantes que guiam o usuário de forma intuitiva. Trabalho com atenção aos detalhes, desenvolvendo style guides completos que incluem grids, paletas de cores e iconografia, garantindo consistência e usabilidade em cada projeto.</p>
           <hr className="mt-4"></hr>
         </div>
       </div>
