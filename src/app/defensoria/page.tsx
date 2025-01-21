@@ -33,7 +33,7 @@ export default function DefensoriaPage() {
         </div>
       </div>
       <div className="text-center mb-[24px]">
-        <p className="text-guava-500 text-[38px] font-bold">PROBLEMATIZAÇÃO & PESQUISAS:</p>
+        <p className="text-guava-500 text-[30px] md:text-[38px] font-bold">PROBLEMATIZAÇÃO & PESQUISAS:</p>
       </div>
       <div className="mb-[24px] flex items-center justify-center">
         <div className="hidden md:block w-[1280px] p-8 text-center">
