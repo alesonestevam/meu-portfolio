@@ -75,6 +75,83 @@ export const metadata: Metadata = {
   bookmarks: "/bookmarks",
   category: "Portfolio",
   classification: "Portfolio público",
+  openGraph: {
+    title: 'Aleson Estevam',
+    description: 'Aleson Estevam Designer',
+    url: "https://alesonestevam.com",
+    siteName: 'Aleson Estevam',
+    images: [
+      {
+        url: 'favicons/logo_softlime_aleson_16.png',
+        width: 16,
+        height: 16,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_32.png',
+        width: 32,
+        height: 32,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_180.png',
+        width: 180,
+        height: 180,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_256.png',
+        width: 256,
+        height: 256,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_512.png',
+        width: 512,
+        height: 512,
+        alt: 'Logo Aleson Estevam',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Aleson Estevam',
+    description: 'Aleson Estevam Designer',
+    images: [
+      {
+        url: 'favicons/logo_softlime_aleson_16.png',
+        width: 16,
+        height: 16,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_32.png',
+        width: 32,
+        height: 32,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_180.png',
+        width: 180,
+        height: 180,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_256.png',
+        width: 256,
+        height: 256,
+        alt: 'Logo Aleson Estevam',
+      },
+      {
+        url: 'favicons/logo_softlime_aleson_512.png',
+        width: 512,
+        height: 512,
+        alt: 'Logo Aleson Estevam',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
