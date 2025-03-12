@@ -58,7 +58,7 @@ export default function VideosPage() {
     },
     {
       id: 2,
-      title: "AMBULATÓRIO: ATENÇÃO ESPECIALIZAD",
+      title: "AMBULATÓRIO: ATENÇÃO ESPECIALIZADA",
       subtitle: "Documentário",
       text: "O curta procura entender, a partir do olhar de profissionais da Saúde e de mulheres e homens trans, a necessidade de implementar, dentro do SUS, um serviço tão especializado, e os principais obstáculos que dificultam o aprimoramento e a difusão desse tipo de atendimento.",
       image: 'images/thumbs/ambulatorio-thumb.svg',
