@@ -11,43 +11,48 @@ export default function SumupPage() {
       <WorksTitleComponent title="Sumup" isRed={true}/>
       <div className="flex items-center flex-col mt-[24px] mb-[24px]">
         <Image
-          src={'images/portifolio/sumup/sumup-1.svg'}
+          src={'images/portifolio/sumup/sumup-1.webp'}
           width={1080}
           height={607}
           alt={"sumup-1"}
           title={"sumup-1"}
+          priority
         />
         <Image
-          src={'images/portifolio/sumup/sumup-2.svg'}
+          src={'images/portifolio/sumup/sumup-2.webp'}
           width={1080}
           height={631}
           alt={"sumup-2"}
           title={"sumup-2"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-3.svg'}
+          src={'images/portifolio/sumup/sumup-3.webp'}
           width={1080}
           height={551}
           alt={"sumup-3"}
           title={"sumup-3"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-4.svg'}
+          src={'images/portifolio/sumup/sumup-4.webp'}
           width={1080}
           height={551}
           alt={"sumup-4"}
           title={"sumup-4"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-5.svg'}
+          src={'images/portifolio/sumup/sumup-5.webp'}
           width={1080}
           height={906}
           alt={"sumup-5"}
           title={"sumup-5"}
           style={{ marginTop: -2}}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center w-full col-span-1 lg:col-span-3 space-x-5 mb-[24px] mt-[24px]">
@@ -60,27 +65,30 @@ export default function SumupPage() {
       </div>
       <div className="flex items-center flex-col mt-[24px] mb-[24px]">
         <Image
-          src={'images/portifolio/sumup/sumup-6.svg'}
+          src={'images/portifolio/sumup/sumup-6.webp'}
           width={1080}
           height={1067}
           alt={"sumup-6"}
           title={"sumup-6"}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-7.svg'}
+          src={'images/portifolio/sumup/sumup-7.webp'}
           width={1080}
           height={1067}
           alt={"sumup-7"}
           title={"sumup-7"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-8.svg'}
+          src={'images/portifolio/sumup/sumup-8.webp'}
           width={1080}
           height={1067}
           alt={"sumup-8"}
           title={"sumup-8"}
           style={{ marginTop: -2}}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center w-full col-span-1 lg:col-span-3 space-x-5 mb-[24px] mt-[24px]">
@@ -93,19 +101,21 @@ export default function SumupPage() {
       </div>
       <div className="flex items-center flex-col mt-[24px] mb-[24px]">
         <Image
-          src={'images/portifolio/sumup/sumup-9.svg'}
+          src={'images/portifolio/sumup/sumup-9.webp'}
           width={1080}
           height={1144}
           alt={"sumup-9"}
           title={"sumup-9"}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/sumup/sumup-10.svg'}
+          src={'images/portifolio/sumup/sumup-10.webp'}
           width={1080}
           height={1144}
           alt={"sumup-10"}
           title={"sumup-10"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center w-full col-span-1 lg:col-span-3 space-x-5 mb-[24px] mt-[24px]">

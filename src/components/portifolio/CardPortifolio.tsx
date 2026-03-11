@@ -14,12 +14,14 @@ interface PortifolioObject {
 }
 
 interface CardPortifolioComponentProps {
-  portifolioObject: PortifolioObject
+  portifolioObject: PortifolioObject;
+  priority?: boolean;
 }
 
 export default function CardPortifolioComponent(
   {
-    portifolioObject
+    portifolioObject,
+    priority = false,
   }: Readonly<CardPortifolioComponentProps>) {
 
   const router = useRouter();
@@ -52,7 +54,8 @@ export default function CardPortifolioComponent(
             height={256}
             alt={portifolioObject.title}
             title={portifolioObject.title}
-            priority
+            priority={priority}
+            loading={priority ? undefined : "lazy"}
             className="rounded-lg w-full max-w-xs md:max-w-md"
             onClick={() => router.push(`${portifolioObject.route}`)}
           />

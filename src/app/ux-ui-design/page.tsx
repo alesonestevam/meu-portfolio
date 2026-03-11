@@ -11,7 +11,7 @@ export default function UxUiDesignPage() {
       type: 'GRÁFICO/UI',
       title: 'RIO SÃO FRANCISCO:  VELHO CHICO',
       text: '"Velho Chico: Nosso Sonho Realizado" representa a maior obra de infraestrutura hídrica do Brasil. A identidade visual, assim como a página online criada para essa iniciativa governamental, refletem a magnitude dessa iniciativa, buscando transmitir a vitalidade e a fluidez.',
-      image: 'images/portifolio/VELHO-CHICO-2-1.svg',
+      image: 'images/portifolio/VELHO-CHICO-2-1.webp',
       route: "velho-chico"
     },
     {
@@ -19,7 +19,7 @@ export default function UxUiDesignPage() {
       type: 'UX/UI',
       title: 'PROJETO EBAC: PIX NA SUMUP',
       text: 'Se trata de um projeto fictício para a conclusão do curso de Design UI pela EBAC (Escola Britânica de Artes Criativas). O desafio aqui foi criar um método intuitivo para que os clientes mais antigos do banco pudessem aprender e usar o método de pagamento PIX.',
-      image: 'images/portifolio/projeto-ebac.svg',
+      image: 'images/portifolio/projeto-ebac.webp',
       route: "sumup"
     },
     {
@@ -27,7 +27,7 @@ export default function UxUiDesignPage() {
       type: 'UX',
       title: 'APLICATIVO COOKTIME',
       text: 'Aplicativo temporizador de cozinha. A ideia é proporcionar tranquilidade através do fluxo de fácil entendimento para o usuário, com isso trazendo mais conforto no controle de tempo em receitas seja no fogão, forno e/ou geladeira.',
-      image: 'images/portifolio/cooktime.svg',
+      image: 'images/portifolio/cooktime.webp',
       route: "cooktime"
     },
     {
@@ -35,7 +35,7 @@ export default function UxUiDesignPage() {
       type: 'UX/UI',
       title: 'SITE DEFENSORIA PÚBLICA',
       text: 'Se trata de um trabalho acadêmico para o redesign da interface geral da Defensoria Pública do DF. O desenvolvimento ocorrer a partir de uma série de entrevistas e questionários ao público atendido pelo cliente, resultando em um layout fluido e elegante, proporcionando uma experiência agradável ao público.',
-      image: 'images/portifolio/defensoria-publica.svg',
+      image: 'images/portifolio/defensoria-publica.webp',
       route: "defensoria"
     }
   ]
@@ -53,7 +53,7 @@ export default function UxUiDesignPage() {
           UxUiPortifolio.map((portifolio, index) => {
             return (
               <div key={portifolio.id}>
-                <CardPortifolioComponent portifolioObject={portifolio} />
+                <CardPortifolioComponent portifolioObject={portifolio} priority={index === 0} />
                 {
                   index < UxUiPortifolio.length -1 &&
                   <hr></hr>

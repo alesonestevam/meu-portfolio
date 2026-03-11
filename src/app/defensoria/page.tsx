@@ -11,11 +11,12 @@ export default function DefensoriaPage() {
       <WorksTitleComponent title="Defensoria pública do DF" isRed={true}/>
       <div className="flex items-center flex-col mt-[24px]">
         <Image
-          src={'images/portifolio/defensoria/defensoria-1.svg'}
+          src={'images/portifolio/defensoria/defensoria-1.webp'}
           width={1280}
           height={859}
           alt={"defensoria-1"}
           title={"defensoria-1"}
+          priority
         />
       </div>
       <div className="mb-[24px] flex items-center justify-center">
@@ -26,9 +27,9 @@ export default function DefensoriaPage() {
           <p><b>renda, com pouca familiaridade com tecnologia e, muitas vezes, analfabetos funcionais.</b></p>
         </div>
         <div className="block md:hidden w-[1280px] bg-guava-500 p-4 text-center">
-          <p>O projeto de <b>redesign do site da Defensoria Pública do Distrito Federal (DPDF)</b> foi um projeto proposto pelo Centro 
-          Universitário do Instituto de Educação Superior de Brasília (IESB) para os alunos de gradução em Design. O objetivo 
-          principal seria tornar os serviços jurídicos mais acessíveis e eficazes para o público alvo, que inclui <b>cidadãos de baixa</b> 
+          <p>O projeto de <b>redesign do site da Defensoria Pública do Distrito Federal (DPDF)</b> foi um projeto proposto pelo Centro
+          Universitário do Instituto de Educação Superior de Brasília (IESB) para os alunos de gradução em Design. O objetivo
+          principal seria tornar os serviços jurídicos mais acessíveis e eficazes para o público alvo, que inclui <b>cidadãos de baixa</b>
           <b>renda, com pouca familiaridade com tecnologia e, muitas vezes, analfabetos funcionais.</b></p>
         </div>
       </div>
@@ -116,6 +117,7 @@ export default function DefensoriaPage() {
                   height={472}
                   alt={"defensoria-2"}
                   title={"defensoria-2"}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -130,6 +132,7 @@ export default function DefensoriaPage() {
                   height={472}
                   alt={"defensoria-3"}
                   title={"defensoria-3"}
+                  loading="lazy"
                 />
             </div>
           </div>
@@ -150,7 +153,7 @@ export default function DefensoriaPage() {
         <div className="block md:hidden w-[1280px] p-2 text-center">
           <p>Clareza e Organização Visual é o objetivo principal de um site, como o da Defensoria Pública.  O grid de <b>4 colunas</b> com
           margens amplas proporciona uma estrutura bem organizada e permite que o conteúdo seja fácil de visualizar e
-          interpretar. A <b>Lexend Deca</b> é uma fonte sans-serif projetada para melhorar a legibilidade e a fluência na leitura. A <b>paleta de cores</b> utilizada teve como base o manual de identidade visual da própria defensoria, mas aqui ela ganha 
+          interpretar. A <b>Lexend Deca</b> é uma fonte sans-serif projetada para melhorar a legibilidade e a fluência na leitura. A <b>paleta de cores</b> utilizada teve como base o manual de identidade visual da própria defensoria, mas aqui ela ganha
           novas variações que ajudam a criar níveis de destaques, como CTAs e alertas/pop-ups, guiando o usuário
           pelas informações mais importantes.</p>
         </div>
@@ -162,6 +165,7 @@ export default function DefensoriaPage() {
           height={477}
           alt={"defensoria-4"}
           title={"defensoria-4"}
+          loading="lazy"
         />
       </div>
       <div className="mb-[24px] mt-[40px] flex items-center justify-center">
@@ -171,27 +175,30 @@ export default function DefensoriaPage() {
       </div>
       <div className="flex flex-col lg:flex-row mt-[24px] justify-center items-center lg:items-start">
       <Image
-          src={'images/portifolio/defensoria/defensoria-5.svg'}
+          src={'images/portifolio/defensoria/defensoria-5.webp'}
           width={270}
           height={580}
           alt={"defensoria-5"}
           title={"defensoria-5"}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/defensoria/defensoria-6.svg'}
+          src={'images/portifolio/defensoria/defensoria-6.webp'}
           width={267}
           height={581}
           alt={"defensoria-6"}
           title={"defensoria-6"}
           style={{marginLeft: -2}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/defensoria/defensoria-7.svg'}
+          src={'images/portifolio/defensoria/defensoria-7.webp'}
           width={304}
           height={699}
           alt={"defensoria-7"}
           title={"defensoria-7"}
           style={{marginLeft: -2}}
+          loading="lazy"
         />
         <Image
           src={'images/portifolio/defensoria/defensoria-8.svg'}
@@ -200,6 +207,7 @@ export default function DefensoriaPage() {
           alt={"defensoria-8"}
           title={"defensoria-8"}
           style={{marginLeft: -2}}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center w-full col-span-1 lg:col-span-3 space-x-5 mb-[24px] mt-[24px]">

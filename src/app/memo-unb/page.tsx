@@ -11,11 +11,12 @@ export default function MemoUnbPage() {
       <WorksTitleComponent title="MemoUnB" />
       <div className="flex justify-center mt-[38px] mb-[67px]">
         <Image
-          src={'images/portifolio/memo-unb/memounb-1.svg'}
+          src={'images/portifolio/memo-unb/memounb-1.webp'}
           width={1125}
           height={387}
           alt={"memounb-1"}
           title={"memounb-1"}
+          priority
         />
       </div>
       <div className="hidden md:flex mb-[24px] items-center justify-center">
@@ -52,22 +53,24 @@ export default function MemoUnbPage() {
         </div>
         <div className="col-span-1">
           <Image
-            src={'images/portifolio/memo-unb/memounb-2.svg'}
+            src={'images/portifolio/memo-unb/memounb-2.webp'}
             width={364}
             height={419}
             alt={"memounb-2"}
             title={"memounb-2"}
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex md:hidden mt-[24px] mb-[24px] flex-col justify-center">
         <div>
           <Image
-            src={'images/portifolio/memo-unb/memounb-2.svg'}
+            src={'images/portifolio/memo-unb/memounb-2.webp'}
             width={364}
             height={419}
             alt={"memounb-2"}
             title={"memounb-2"}
+            loading="lazy"
           />
         </div>
         <div className="flex items-center justify-center">
@@ -88,41 +91,45 @@ export default function MemoUnbPage() {
       <div className="flex items-center justify-center">
         <div className="w-[1280px] bg-lime-200 p-8 flex items-center justify-center">
           <Image
-            src={'images/portifolio/memo-unb/memounb-3.svg'}
+            src={'images/portifolio/memo-unb/memounb-3.webp'}
             width={960}
             height={540}
             alt={"memounb-3"}
             title={"memounb-3"}
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex justify-center mt-[-2px]">
         <Image
-          src={'images/portifolio/memo-unb/memounb-4.svg'}
+          src={'images/portifolio/memo-unb/memounb-4.webp'}
           width={985}
           height={810}
           alt={"memounb-4"}
           title={"memounb-4"}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center mt-[-2px]">
         <div className="w-[1280px] bg-lime-200 p-8 flex items-center justify-center">
           <Image
-            src={'images/portifolio/memo-unb/memounb-5.svg'}
+            src={'images/portifolio/memo-unb/memounb-5.webp'}
             width={1057}
             height={690}
             alt={"memounb-5"}
             title={"memounb-5"}
+            loading="lazy"
           />
         </div>
       </div>
       <div className="flex justify-center mt-[-2px]">
         <Image
-          src={'images/portifolio/memo-unb/memounb-6.svg'}
+          src={'images/portifolio/memo-unb/memounb-6.webp'}
           width={1280}
           height={708}
           alt={"memounb-6"}
           title={"memounb-6"}
+          loading="lazy"
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-[24px] mb-[24px] p-0 md:p-12">
@@ -141,11 +148,12 @@ export default function MemoUnbPage() {
         </div>
         <div className="col-span-1">
           <Image
-            src={'images/portifolio/memo-unb/memounb-7.svg'}
+            src={'images/portifolio/memo-unb/memounb-7.webp'}
             width={576}
             height={432}
             alt={"memounb-7"}
             title={"memounb-7"}
+            loading="lazy"
           />
         </div>
       </div>

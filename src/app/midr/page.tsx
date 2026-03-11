@@ -17,22 +17,24 @@ export default function MIDRPage() {
       </div>
       <div className="relative mb-[90px] mdd:mb-[140px] flex items-center justify-center">
         <Image
-          src={"images/portifolio/midr/midr-1.svg"}
+          src={"images/portifolio/midr/midr-1.webp"}
           className="flex md:hidden"
           width={342}
           height={350}
           alt={"midr-1"}
           title={"midr-1"}
+          priority
         />
         <div className="w-[1280px] h-full lg:h-[200px] bg-lime-200 rounded-[16px] hidden md:flex">
           <div className="relative w-1/3 flex justify-center">
             <Image
-              src={"images/portifolio/midr/midr-1.svg"}
+              src={"images/portifolio/midr/midr-1.webp"}
               className="absolute top-[-45px] md:top-[-25px] lg:top-[-80px]"
               width={342}
               height={350}
               alt={"midr-1"}
               title={"midr-1"}
+              priority
             />
           </div>
           <div className="w-2/3 hidden lg:flex flex-col justify-center">
@@ -61,11 +63,12 @@ export default function MIDRPage() {
       </div>
       <div className="flex justify-center mb-[38px]">
         <Image
-          src={"images/portifolio/midr/midr-2.svg"}
+          src={"images/portifolio/midr/midr-2.webp"}
           width={1062}
           height={1000}
           alt={"midr-2"}
           title={"midr-2"}
+          loading="lazy"
           />
       </div>
       <div className="text-center mb-[76px]">
@@ -83,15 +86,17 @@ export default function MIDRPage() {
           height={464}
           alt={"midr-3"}
           title={"midr-3"}
+          loading="lazy"
           />
       </div>
       <div className="flex justify-center mb-[38px]">
         <Image
-          src={"images/portifolio/midr/midr-4.svg"}
+          src={"images/portifolio/midr/midr-4.webp"}
           width={1075}
           height={464}
           alt={"midr-4"}
           title={"midr-4"}
+          loading="lazy"
           />
       </div>
       <div className="text-center mb-[38px]">
@@ -102,11 +107,12 @@ export default function MIDRPage() {
       </div>
       <div className="flex justify-center mb-[38px]">
         <Image
-          src={"images/portifolio/midr/midr-5.svg"}
+          src={"images/portifolio/midr/midr-5.webp"}
           width={648}
           height={745}
           alt={"midr-5"}
           title={"midr-5"}
+          loading="lazy"
           />
       </div>
       <FooterScrollTopTopButton />

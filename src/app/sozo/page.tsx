@@ -11,11 +11,12 @@ export default function SozoPage() {
       <WorksTitleComponent title="Grupo Sozo" />
       <div className="flex justify-center mt-[91px] mb-[67px]">
         <Image
-          src={'images/portifolio/sozo/sozo-1.svg'}
+          src={'images/portifolio/sozo/sozo-1.webp'}
           width={1005}
           height={3072}
           alt={"sozo"}
           title={"sozo"}
+          priority
           />
       </div>
       <FooterScrollTopTopButton />

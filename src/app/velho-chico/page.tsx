@@ -16,6 +16,7 @@ export default function VelhoChicoPage() {
             height={405}
             alt={"velho-chico-sonho-realizado"}
             title={"velho-chico-sonho-realizado"}
+            priority
           />
       </div>
       <div className="text-center mb-[32px]">
@@ -26,43 +27,48 @@ export default function VelhoChicoPage() {
       </div>
       <div className="flex items-center flex-col">
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-logos-1.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-logos-1.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-logos-1"}
           title={"velho-chico-logos-1"}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-fonts.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-fonts.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-fonts"}
           title={"velho-chico-fonts"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-cores.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-cores.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-cores"}
           title={"velho-chico-cores"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-aplicacoes-1.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-aplicacoes-1.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-aplicacoes-1"}
           title={"velho-chico-aplicacoes-1"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-aplicacoes-2.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-aplicacoes-2.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-aplicacoes-2"}
           title={"velho-chico-aplicacoes-2"}
           style={{ marginTop: -1}}
+          loading="lazy"
         />
       </div>
       <div className="text-center mt-[32px] mb-[32px]">
@@ -73,11 +79,12 @@ export default function VelhoChicoPage() {
       </div>
       <div className="flex items-center flex-col">
         <Image
-          src={'images/portifolio/velho-chico/velho-chico-site.svg'}
+          src={'images/portifolio/velho-chico/velho-chico-site.webp'}
           width={1248}
           height={702}
           alt={"velho-chico-site"}
           title={"velho-chico-site"}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center justify-center w-full col-span-1 lg:col-span-3 space-x-5 mb-[24px] mt-[24px]">

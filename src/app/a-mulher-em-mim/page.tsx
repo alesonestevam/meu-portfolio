@@ -16,6 +16,7 @@ export default function MIDRPage() {
           height={263}
           alt={"britney-1"}
           title={"britney-1"}
+          priority
           />
       </div>
       <div className="text-center mb-[38px]">
@@ -27,11 +28,12 @@ export default function MIDRPage() {
       <div className="flex flex-col justify-center mt-[24px] mb-[46px]">
         <div className="flex justify-center">
           <Image
-            src={"images/portifolio/britney/britney-2.svg"}
+            src={"images/portifolio/britney/britney-2.webp"}
             width={972}
             height={717}
             alt={"britney-2"}
             title={"britney-2"}
+            loading="lazy"
             />
         </div>
         <div className="flex items-center justify-center">
@@ -49,11 +51,12 @@ export default function MIDRPage() {
         </div>
         <div className="flex justify-center">
           <Image
-            src={"images/portifolio/britney/britney-3.svg"}
+            src={"images/portifolio/britney/britney-3.webp"}
             width={714}
             height={920}
             alt={"britney-3"}
             title={"britney-3"}
+            loading="lazy"
             />
         </div>
       </div>
@@ -64,19 +67,21 @@ export default function MIDRPage() {
       </div>
       <div className="flex flex-col items-center justify-center mt-[24px] mb-[46px]">
         <Image
-          src={"images/portifolio/britney/britney-4.svg"}
+          src={"images/portifolio/britney/britney-4.webp"}
           width={960}
           height={1680}
           alt={"britney-4"}
           title={"britney-4"}
+          loading="lazy"
         />
           <Image
-            src={"images/portifolio/britney/britney-5.svg"}
+            src={"images/portifolio/britney/britney-5.webp"}
             width={960}
             height={904}
             alt={"britney-5"}
             title={"britney-5"}
             style={{marginTop: -10}}
+            loading="lazy"
           />
       </div>
       <FooterScrollTopTopButton />

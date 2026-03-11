@@ -11,11 +11,12 @@ export default function CookTimePage() {
       <WorksTitleComponent title="CookTime" isRed={true}/>
       <div className="flex items-center flex-col mt-[24px]">
         <Image
-          src={'images/portifolio/cooktime/cooktime-1.svg'}
+          src={'images/portifolio/cooktime/cooktime-1.webp'}
           width={1280}
           height={859}
           alt={"cooktime-1"}
           title={"cooktime-1"}
+          priority
         />
       </div>
       <div className="hidden md:flex mb-[24px] items-center justify-center">
@@ -43,11 +44,12 @@ export default function CookTimePage() {
       </div>
       <div className="flex items-center flex-col mt-[24px] mb-[14px]">
         <Image
-          src={'images/portifolio/cooktime/cooktime-2.svg'}
+          src={'images/portifolio/cooktime/cooktime-2.webp'}
           width={1280}
           height={166}
           alt={"cooktime-2"}
           title={"cooktime-2"}
+          loading="lazy"
         />
       </div>
       <div className="mb-[24px] flex items-center justify-center">
@@ -95,11 +97,12 @@ export default function CookTimePage() {
         </div>
         <div>
           <Image
-            src={'images/portifolio/cooktime/cooktime-3.svg'}
+            src={'images/portifolio/cooktime/cooktime-3.webp'}
             width={582}
             height={291}
             alt={"cooktime-3"}
             title={"cooktime-3"}
+            loading="lazy"
           />
         </div>
       </div>
@@ -115,11 +118,12 @@ export default function CookTimePage() {
       </div>
       <div className="flex items-center flex-col mt-[24px] mb-[14px]">
         <Image
-          src={'images/portifolio/cooktime/cooktime-4.svg'}
+          src={'images/portifolio/cooktime/cooktime-4.webp'}
           width={1280}
           height={829}
           alt={"cooktime-4"}
           title={"cooktime-4"}
+          loading="lazy"
         />
       </div>
       <div className="text-center mb-[24px]">
@@ -127,11 +131,12 @@ export default function CookTimePage() {
       </div>
       <div className="flex items-center justify-center mt-[24px] mb-[14px]">
         <Image
-          src={'images/portifolio/cooktime/cooktime-5.svg'}
+          src={'images/portifolio/cooktime/cooktime-5.webp'}
           width={976}
           height={1125}
           alt={"cooktime-5"}
           title={"cooktime-5"}
+          loading="lazy"
         />
       </div>
       <div className=" hidden md:flex mb-[24px] items-center justify-center">

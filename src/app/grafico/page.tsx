@@ -15,7 +15,7 @@ export default function GraficoPage() {
       type: 'GRÁFICO/UI',
       title: 'RIO SÃO FRANCISCO:  VELHO CHICO',
       text: '"Velho Chico: Nosso Sonho Realizado" representa a maior obra de infraestrutura hídrica do Brasil. A identidade visual, assim como a página online criada para essa iniciativa governamental, refletem a magnitude dessa iniciativa, buscando transmitir a vitalidade e a fluidez.',
-      image: 'images/portifolio/VELHO-CHICO-2-1.svg',
+      image: 'images/portifolio/VELHO-CHICO-2-1.webp',
       route: "velho-chico"
     },
     {
@@ -31,23 +31,23 @@ export default function GraficoPage() {
       type: 'GRÁFICO',
       title: 'COMUNICAÇÃO DIGITAL MIDR',
       text: 'Design das redes sociais do Ministério da Integração e Desenvolvimento Regional, desenvolvendo conteúdos para Instagram, Twitter e Facebook. O trabalho em questão segue a identidade oficial do governo atuante, garantindo coesão visual e institucionalidade. Essa é a comunicação direta com a população para informar, engajar e aproximar a política das pessoas, reforçando a transparência e a acessibilidade das políticas públicas.',
-      image: 'images/portifolio/midr-comunicacao.svg',
+      image: 'images/portifolio/midr-comunicacao.webp',
       route: "midr"
     },
     {
       id: '//04',
       type: 'GRÁFICO',
       title: 'LIVRO: A MULHER EM MIM',
-      text: 'A cantora norte americana Britney Spears lançou seu livro de memórias intitulado "The Woman In Me”. O presente projeto repensa o visual do livro em uma nova roupagem para as vendas em território brasileiro.',
-      image: 'images/portifolio/livro-mulher-em-min.svg',
+      text: 'A cantora norte americana Britney Spears lançou seu livro de memórias intitulado "The Woman In Me". O presente projeto repensa o visual do livro em uma nova roupagem para as vendas em território brasileiro.',
+      image: 'images/portifolio/livro-mulher-em-min.webp',
       route: "a-mulher-em-mim"
     },
     {
       id: '//05',
       type: 'GRÁFICO',
       title: 'GRUPO SOZO',
-      text: 'Criação de uma marca mãe chama "Sozo” para a empresa VLG Investimentos. A identidade foi pensada para transmitir transparência e elegância, se tratando de uma empresa de altos investimentos. Um guia de comportamento visual da marca tanto internamente como para o público externo.',
-      image: 'images/portifolio/grupo-sozo.svg',
+      text: 'Criação de uma marca mãe chama "Sozo" para a empresa VLG Investimentos. A identidade foi pensada para transmitir transparência e elegância, se tratando de uma empresa de altos investimentos. Um guia de comportamento visual da marca tanto internamente como para o público externo.',
+      image: 'images/portifolio/grupo-sozo.webp',
       route: "sozo"
     },
     {
@@ -55,7 +55,7 @@ export default function GraficoPage() {
       type: 'GRÁFICO',
       title: 'MemoUnB',
       text: 'A criação da identidade visual do MemoUnB é uma homenagem ao legado inconfundível de Oscar Niemeyer, celebrando suas formas curvas e elegantes, que se destacam nas pinturas do edifício SG 10 e nas obras icônicas que marcam a história arquitetônica brasileira.',
-      image: 'images/portifolio/memo-unb.svg',
+      image: 'images/portifolio/memo-unb.webp',
       route: "memo-unb"
     }
   ];
@@ -81,7 +81,7 @@ export default function GraficoPage() {
       <div className="mt-12 mb-12">
         {currentItems.map((portifolio, index) => (
           <div key={portifolio.id}>
-            <CardPortifolioComponent portifolioObject={portifolio} />
+            <CardPortifolioComponent portifolioObject={portifolio} priority={index === 0} />
             {index < currentItems.length - 1 && <hr />}
           </div>
         ))}
